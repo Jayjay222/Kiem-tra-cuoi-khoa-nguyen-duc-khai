@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="color">
+        <span id="hex">#e74c3c</span>
+        <button onclick="getNewColor()"> Chọn Màu </button>
+    </div>
+    <script type="text/javascript">
+        function getNewColor(){
+            var symbols,color;
+            symbols = "0123456789ABCDEF"
+            color="#";
+            for(var i=0; i<6; i++){
+                color = color+symbols[Math.floor(Math.random()*16)] //16 ki tu o symbols.
+            }
+            document.body.style.background= color;
+
+        }
+    
+    
+    
+    
+    </script>
+</body>
+</html>
